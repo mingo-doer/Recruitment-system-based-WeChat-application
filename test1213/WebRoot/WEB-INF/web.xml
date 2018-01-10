@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"  
+  version="3.0"  
+  metadata-complete="true">  
+  
+<servlet>  
+    <servlet-name>test</servlet-name>  
+    <servlet-class>test1213.serv1</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+    <servlet-name>test</servlet-name>  
+    <url-pattern>/serv1</url-pattern>  
+</servlet-mapping>  
+
+<!-- 获取用户消息的接口 -->
+<servlet>  
+    <servlet-name>getmsg</servlet-name>  
+    <servlet-class>test1213.getmsg</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+    <servlet-name>getmsg</servlet-name>  
+    <url-pattern>/getmsg</url-pattern>  
+</servlet-mapping>  
+<!-- 获取消息谁读了的接口 -->
+<servlet>  
+    <servlet-name>getwhoread</servlet-name>  
+    <servlet-class>test1213.getwhoread</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+    <servlet-name>getwhoread</servlet-name>  
+    <url-pattern>/getwhoread</url-pattern>  
+</servlet-mapping>
+<!-- 上传消息的接口 -->  
+<servlet>  
+    <servlet-name>uploadmsg</servlet-name>  
+    <servlet-class>test1213.uploadmsg</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+    <servlet-name>uploadmsg</servlet-name>  
+    <url-pattern>/uploadmsg</url-pattern>  
+</servlet-mapping>
+<!-- 登陆接口 -->
+  <servlet>  
+    <servlet-name>onlogin</servlet-name>  
+    <servlet-class>test1213.onlogin</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+    <servlet-name>onlogin</servlet-name>  
+    <url-pattern>/onlogin</url-pattern>  
+</servlet-mapping>
+<!-- 获取职位接口 -->
+<servlet>  
+    <servlet-name>getjobdetail</servlet-name>  
+    <servlet-class>test1213.getjobdetail</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+    <servlet-name>getjobdetail</servlet-name>  
+    <url-pattern>/getjobdetail</url-pattern>  
+</servlet-mapping>
+</web-app> 
